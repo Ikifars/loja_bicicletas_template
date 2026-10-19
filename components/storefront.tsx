@@ -21,26 +21,26 @@ import {
 
 
 const products = [
-  // --- BIKES ---
-  { id: 1, name: 'BIC SCOTT SCALE RC TEAM ISSUE', category: 'Bikes', price: '35.990,00', old: '38.990,00', image: 'https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=800&q=85', badge: '-7%' },
-  { id: 2, name: 'BIC CANNONDALE SYNAPSE NEO', category: 'Bikes', price: '42.500,00', image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=85' },
-  { id: 3, name: 'BIC PINARELLO F5 RIVAL AXS', category: 'Bikes', price: '54.900,00', image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=85' },
-  { id: 4, name: 'BIC SCOTT SPARK RC EXPERT', category: 'Bikes', price: '39.990,00', image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=800&q=85' },
-  { id: 5, name: 'BIC SPECIALIZED TARMAC SL7 COMP', category: 'Bikes', price: '32.900,00', old: '35.000,00', image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=85', badge: '-6%' },
-  { id: 6, name: 'BIC TREK X-CALIBER 9', category: 'Bikes', price: '12.490,00', image: 'https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=85' },
-  { id: 7, name: 'BIC OGGI BIG WHEEL 7.4', category: 'Bikes', price: '8.290,00', image: 'https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=800&q=85' },
-  { id: 8, name: 'BIC CANYON AEROAD CF SL 8', category: 'Bikes', price: '38.000,00', image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=85' },
-  { id: 9, name: 'BIC CALOI ELITE CARBON FS', category: 'Bikes', price: '19.990,00', old: '22.500,00', image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=800&q=85', badge: '-11%' },
-  { id: 10, name: 'BIC CERVELO S5 DISC ULTEGRA DI2', category: 'Bikes', price: '72.000,00', image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=85' },
-  { id: 11, name: 'BIC S-WORKS EPIC WORLD CUP', category: 'Bikes', price: '89.900,00', image: 'https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=800&q=85' },
-  { id: 12, name: 'BIC BMC TIMEMACHINE ROAD 01', category: 'Bikes', price: '68.500,00', image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=85' },
-  { id: 13, name: 'BIC SENSE FACTORY CARBON EVO', category: 'Bikes', price: '24.990,00', image: 'https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=85' },
-  { id: 14, name: 'BIC MERIDA SCULTURA 4000', category: 'Bikes', price: '16.800,00', old: '18.200,00', image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=85', badge: '-7%' },
-  { id: 15, name: 'BIC BIANCHI OLTRE XR4 DURA-ACE', category: 'Bikes', price: '65.000,00', image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=85' },
-  { id: 16, name: 'BIC GIANT ADVANCED PRO 29 1', category: 'Bikes', price: '28.500,00', image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=800&q=85' },
-  { id: 17, name: 'BIC FACTOR OSTRO VAM SHIMANO DI2', category: 'Bikes', price: '78.000,00', image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=85' },
+  // --- BIKES (id 1 a 17) ---
+  { id: 1, name: 'BICICLETA SCOTT SCALE RC TEAM ISSUE', category: 'Bikes', price: '35.990,00', old: '38.990,00', image: 'https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=800&q=85', badge: '-7%' },
+  { id: 2, name: 'BICICLETA CANNONDALE SYNAPSE NEO', category: 'Bikes', price: '42.500,00', image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=85' },
+  { id: 3, name: 'BICICLETA PINARELLO F5 RIVAL AXS', category: 'Bikes', price: '54.900,00', image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=85' },
+  { id: 4, name: 'BICICLETA SCOTT SPARK RC EXPERT', category: 'Bikes', price: '39.990,00', image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=800&q=85' },
+  { id: 5, name: 'BICICLETA SPECIALIZED TARMAC SL7 COMP', category: 'Bikes', price: '32.900,00', old: '35.000,00', image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=85', badge: '-6%' },
+  { id: 6, name: 'BICICLETA TREK X-CALIBER 9', category: 'Bikes', price: '12.490,00', image: 'https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=85' },
+  { id: 7, name: 'BICICLETA OGGI BIG WHEEL 7.4', category: 'Bikes', price: '8.290,00', image: 'https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=800&q=85' },
+  { id: 8, name: 'BICICLETA CANYON AEROAD CF SL 8', category: 'Bikes', price: '38.000,00', image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=85' },
+  { id: 9, name: 'BICICLETA CALOI ELITE CARBON FS', category: 'Bikes', price: '19.990,00', old: '22.500,00', image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=800&q=85', badge: '-11%' },
+  { id: 10, name: 'BICICLETA CERVELO S5 DISC ULTEGRA DI2', category: 'Bikes', price: '72.000,00', image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=85' },
+  { id: 11, name: 'BICICLETA S-WORKS EPIC WORLD CUP', category: 'Bikes', price: '89.900,00', image: 'https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=800&q=85' },
+  { id: 12, name: 'BICICLETA BMC TIMEMACHINE ROAD 01', category: 'Bikes', price: '68.500,00', image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=85' },
+  { id: 13, name: 'BICICLETA SENSE FACTORY CARBON EVO', category: 'Bikes', price: '24.990,00', image: 'https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=85' },
+  { id: 14, name: 'BICICLETA MERIDA SCULTURA 4000', category: 'Bikes', price: '16.800,00', old: '18.200,00', image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=85', badge: '-7%' },
+  { id: 15, name: 'BICICLETA BIANCHI OLTRE XR4 DURA-ACE', category: 'Bikes', price: '65.000,00', image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=85' },
+  { id: 16, name: 'BICICLETA GIANT ADVANCED PRO 29 1', category: 'Bikes', price: '28.500,00', image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=800&q=85' },
+  { id: 17, name: 'BICICLETA FACTOR OSTRO VAM SHIMANO DI2', category: 'Bikes', price: '78.000,00', image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=85' },
 
-  // --- ACESSÓRIOS ---
+  // --- ACESSÓRIOS (id 18 a 33) ---
   { id: 18, name: 'RASTREADOR MAGICSHINE NEFTY', category: 'Acessórios', price: '180,00', image: 'https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=800&q=85' },
   { id: 19, name: 'CAPACETE SPECIALIZED EVADE 3', category: 'Acessórios', price: '1.990,00', old: '2.200,00', image: 'https://images.unsplash.com/photo-1558980394-0c87b4e6b3c5?auto=format&fit=crop&w=800&q=85', badge: '-9%' },
   { id: 20, name: 'CICLOCOMPUTADOR GARMIN EDGE 840', category: 'Acessórios', price: '3.890,00', image: 'https://images.unsplash.com/photo-1517649763962-0c623266010b?auto=format&fit=crop&w=800&q=85' },
@@ -58,7 +58,7 @@ const products = [
   { id: 32, name: 'MOCHILA DE HIDRATAÇÃO CAMELBAK ROGUE', category: 'Acessórios', price: '450,00', old: '520,00', image: 'https://images.unsplash.com/photo-1558980394-0c87b4e6b3c5?auto=format&fit=crop&w=800&q=85', badge: '-13%' },
   { id: 33, name: 'RADAR E LUZ TRASEIRA GARMIN VARIA RTL515', category: 'Acessórios', price: '1.850,00', image: 'https://images.unsplash.com/photo-1508974239320-0a029497e820?auto=format&fit=crop&w=800&q=85' },
 
-  // --- PEÇAS ---
+  // --- PEÇAS (id 34 a 50) ---
   { id: 34, name: 'CUBO TRASEIRO SHIMANO MT510', category: 'Peças', price: '320,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
   { id: 35, name: 'ÓLEO SUSPENSÃO ROCK SHOX 2.5W 1L', category: 'Peças', price: '190,00', image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=85' },
   { id: 36, name: 'GRUPO SRAM GX EAGLE AXS WIRELESS', category: 'Peças', price: '6.490,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
@@ -76,7 +76,8 @@ const products = [
   { id: 48, name: 'CANOTE RETRÁTIL FOX TRANSFER FACTORY KASHIMA', category: 'Peças', price: '3.450,00', image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=85' },
   { id: 49, name: 'CÂMBIO TRASEIRO SHIMANO XTR M9100 12V', category: 'Peças', price: '1.950,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
   { id: 50, name: 'PEDIVELA SRAM RED AXS POWER METER 12V', category: 'Peças', price: '7.800,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' }
-]
+];
+    
 
 const priceInReais = (price: string) => Number(price.replace('.', '').replace(',', '.')) * 5.05
 const formatReais = (price: string) => priceInReais(price).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
