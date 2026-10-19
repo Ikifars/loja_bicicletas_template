@@ -19,16 +19,67 @@ import {
   X,
 } from 'lucide-react'
 
+
 const products = [
-  { id: 1, name: 'BIC SCOTT SCALE RC TEAM ISSUE', category: 'Bikes', price: '5.350,00', old: '5.700,00', image: 'https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=800&q=85', badge: '-6%' },
-  { id: 2, name: 'BIC CANNONDALE SYNAPSE NEO', category: 'Bikes', price: '9.300,00', image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=85' },
-  { id: 3, name: 'BIC PINARELLO F5 RIVAL AXS', category: 'Bikes', price: '6.200,00', image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=85' },
-  { id: 4, name: 'BIC SCOTT SPARK RC EXPERT', category: 'Bikes', price: '7.500,00', image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=800&q=85' },
-  { id: 5, name: 'RASTREADOR MAGICSHINE NEFTY', category: 'Acessórios', price: '35,00', image: 'https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=800&q=85' },
-  { id: 6, name: 'CAPACETE SPECIALIZED EVADE 4', category: 'Acessórios', price: '420,00', image: 'https://images.unsplash.com/photo-1558980394-0c87b4e6b3c5?auto=format&fit=crop&w=800&q=85' },
-  { id: 7, name: 'CUBO TRASEIRO SHIMANO MT510', category: 'Peças', price: '56,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
-  { id: 8, name: 'ÓLEO SUSPENSÃO ROCK SHOX 2.5W', category: 'Peças', price: '51,00', image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=85' },
+  // --- BIKES ---
+  { id: 1, name: 'BIC SCOTT SCALE RC TEAM ISSUE', category: 'Bikes', price: '35.990,00', old: '38.990,00', image: 'https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=800&q=85', badge: '-7%' },
+  { id: 2, name: 'BIC CANNONDALE SYNAPSE NEO', category: 'Bikes', price: '42.500,00', image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=85' },
+  { id: 3, name: 'BIC PINARELLO F5 RIVAL AXS', category: 'Bikes', price: '54.900,00', image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=85' },
+  { id: 4, name: 'BIC SCOTT SPARK RC EXPERT', category: 'Bikes', price: '39.990,00', image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=800&q=85' },
+  { id: 5, name: 'BIC SPECIALIZED TARMAC SL7 COMP', category: 'Bikes', price: '32.900,00', old: '35.000,00', image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=85', badge: '-6%' },
+  { id: 6, name: 'BIC TREK X-CALIBER 9', category: 'Bikes', price: '12.490,00', image: 'https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=85' },
+  { id: 7, name: 'BIC OGGI BIG WHEEL 7.4', category: 'Bikes', price: '8.290,00', image: 'https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=800&q=85' },
+  { id: 8, name: 'BIC CANYON AEROAD CF SL 8', category: 'Bikes', price: '38.000,00', image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=85' },
+  { id: 9, name: 'BIC CALOI ELITE CARBON FS', category: 'Bikes', price: '19.990,00', old: '22.500,00', image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=800&q=85', badge: '-11%' },
+  { id: 10, name: 'BIC CERVELO S5 DISC ULTEGRA DI2', category: 'Bikes', price: '72.000,00', image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=85' },
+  { id: 11, name: 'BIC S-WORKS EPIC WORLD CUP', category: 'Bikes', price: '89.900,00', image: 'https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=800&q=85' },
+  { id: 12, name: 'BIC BMC TIMEMACHINE ROAD 01', category: 'Bikes', price: '68.500,00', image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=85' },
+  { id: 13, name: 'BIC SENSE FACTORY CARBON EVO', category: 'Bikes', price: '24.990,00', image: 'https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=85' },
+  { id: 14, name: 'BIC MERIDA SCULTURA 4000', category: 'Bikes', price: '16.800,00', old: '18.200,00', image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=85', badge: '-7%' },
+  { id: 15, name: 'BIC BIANCHI OLTRE XR4 DURA-ACE', category: 'Bikes', price: '65.000,00', image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=85' },
+
+  // --- ACESSÓRIOS ---
+  { id: 16, name: 'RASTREADOR MAGICSHINE NEFTY', category: 'Acessórios', price: '180,00', image: 'https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=800&q=85' },
+  { id: 17, name: 'CAPACETE SPECIALIZED EVADE 3', category: 'Acessórios', price: '1.990,00', old: '2.200,00', image: 'https://images.unsplash.com/photo-1558980394-0c87b4e6b3c5?auto=format&fit=crop&w=800&q=85', badge: '-9%' },
+  { id: 18, name: 'CICLOCOMPUTADOR GARMIN EDGE 840', category: 'Acessórios', price: '3.890,00', image: 'https://images.unsplash.com/photo-1517649763962-0c623266010b?auto=format&fit=crop&w=800&q=85' },
+  { id: 19, name: 'FAROL LEZYNE MACRO DRIVE 1300XXL', category: 'Acessórios', price: '650,00', image: 'https://images.unsplash.com/photo-1508974239320-0a029497e820?auto=format&fit=crop&w=800&q=85' },
+  { id: 20, name: 'BOMBA DE AR LEZYNE CNC FLOOR DRIVE', category: 'Acessórios', price: '520,00', image: 'https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=800&q=85' },
+  { id: 21, name: 'SAPATILHA SHIMANO RC702 ROAD', category: 'Acessórios', price: '1.490,00', image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=85' },
+  { id: 22, name: 'OCULOS OAKLEY SUTRO LITE', category: 'Acessórios', price: '1.150,00', old: '1.300,00', image: 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=85', badge: '-11%' },
+  { id: 23, name: 'BOLSA DE SELIM TOPEAK AEROPACK', category: 'Acessórios', price: '210,00', image: 'https://images.unsplash.com/photo-1558980394-0c87b4e6b3c5?auto=format&fit=crop&w=800&q=85' },
+  { id: 24, name: 'CAPACETE GIRO AIR ATTACK MIPS', category: 'Acessórios', price: '1.250,00', image: 'https://images.unsplash.com/photo-1558980394-0c87b4e6b3c5?auto=format&fit=crop&w=800&q=85' },
+  { id: 25, name: 'LUVAS FOX DEFEND D3O', category: 'Acessórios', price: '280,00', image: 'https://images.unsplash.com/photo-1517649763962-0c623266010b?auto=format&fit=crop&w=800&q=85' },
+  { id: 26, name: 'SUPORTE CARAMANHOLA TACOX CARBON', category: 'Acessórios', price: '190,00', image: 'https://images.unsplash.com/photo-1508974239320-0a029497e820?auto=format&fit=crop&w=800&q=85' },
+  { id: 27, name: 'CARAMANHOLA CAMELBAK CHUTE MAG', category: 'Acessórios', price: '110,00', image: 'https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=800&q=85' },
+  { id: 28, name: 'ROLO DE TREINAMENTO WAHOO KICKR CORE', category: 'Acessórios', price: '7.890,00', image: 'https://images.unsplash.com/photo-1517649763962-0c623266010b?auto=format&fit=crop&w=800&q=85' },
+  { id: 29, name: 'PEDAL SHIMANO ULTEGRA PD-R8000', category: 'Acessórios', price: '1.290,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
+  { id: 30, name: 'MOCHILA DE HIDRATAÇÃO CAMELBAK ROGUE', category: 'Acessórios', price: '450,00', old: '520,00', image: 'https://images.unsplash.com/photo-1558980394-0c87b4e6b3c5?auto=format&fit=crop&w=800&q=85', badge: '-13%' },
+
+  // --- PEÇAS ---
+  { id: 31, name: 'CUBO TRASEIRO SHIMANO MT510', category: 'Peças', price: '320,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
+  { id: 32, name: 'ÓLEO SUSPENSÃO ROCK SHOX 2.5W 1L', category: 'Peças', price: '190,00', image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=85' },
+  { id: 33, name: 'GRUPO SRAM GX EAGLE AXS WIRELESS', category: 'Peças', price: '6.490,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
+  { id: 34, name: 'CASSETE SHIMANO DEORE XT M8100 12V', category: 'Peças', price: '1.100,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
+  { id: 35, name: 'CORRENTE SRAM XX1 EAGLE RAINBOW 12V', category: 'Peças', price: '680,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
+  { id: 36, name: 'SUSPENSÃO ROCKSHOX SID SL ULTIMATE', category: 'Peças', price: '6.990,00', old: '7.500,00', image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=85', badge: '-7%' },
+  { id: 37, name: 'PNEU MAXXIS ASPEN 29x2.40 WT TR EXO', category: 'Peças', price: '420,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
+  { id: 38, name: 'PNEU CONTINENTAL GRAND PRIX 5000 700x28', category: 'Peças', price: '490,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
+  { id: 39, name: 'FREIO A DISCO HIDRÁULICO SHIMANO DEORE M6100', category: 'Peças', price: '850,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
+  { id: 40, name: 'RODAS CARBONO DT SWISS XMC 1200', category: 'Peças', price: '14.500,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
+  { id: 41, name: 'SELIM POWER COMP SHORT NOSE SPECIALIZED', category: 'Peças', price: '620,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
+  { id: 42, name: 'DISCO DE FREIO SHIMANO RT-MT900 ICE-TECH 160MM', category: 'Peças', price: '540,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
+  { id: 43, name: 'MOVIMENTO CENTRAL CERAMICSPEED BSA SRAM DUB', category: 'Peças', price: '2.100,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
+  { id: 44, name: 'GUIDÃO INTEGRADO CARBONO SYNCROS FRASER iC', category: 'Peças', price: '3.200,00', image: 'https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=800&q=85' },
+  { id: 45, name: 'CANOTE RETRÁTIL FOX TRANSFER FACTORY KASHIMA', category: 'Peças', price: '3.450,00', image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=85' },
+
+  // --- VESTUÁRIO & MANUTENÇÃO ---
+  { id: 46, name: 'BREADT MAVIC COSMIC PRO JERSEY', category: 'Vestuário', price: '380,00', image: 'https://images.unsplash.com/photo-1517649763962-0c623266010b?auto=format&fit=crop&w=800&q=85' },
+  { id: 47, name: 'BERMUDA C/ FORRO CASTALLI ENTRATA', category: 'Vestuário', price: '490,00', old: '550,00', image: 'https://images.unsplash.com/photo-1517649763962-0c623266010b?auto=format&fit=crop&w=800&q=85', badge: '-11%' },
+  { id: 48, name: 'LUBRIFICANTE WAX SQUIRT CHAIN LUBE 120ML', category: 'Manutenção', price: '89,00', image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=85' },
+  { id: 49, name: 'SELANTE PARA TUBELESS STANS NOTUBES 946ML', category: 'Manutenção', price: '165,00', image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=85' },
+  { id: 50, name: 'KIT FERRAMENTAS PORTÁTIL PARK TOOL IB-3', category: 'Manutenção', price: '195,00', image: 'https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=800&q=85' }
 ]
+
 
 const priceInReais = (price: string) => Number(price.replace('.', '').replace(',', '.')) * 5.05
 const formatReais = (price: string) => priceInReais(price).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
