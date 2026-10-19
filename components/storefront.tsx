@@ -135,7 +135,7 @@ export default function Storefront() {
   const [filter, setFilter] = useState('Todos')
   const [brand, setBrand] = useState('Todas')
   const [size, setSize] = useState('Todos')
-  const [maxPrice, setMaxPrice] = useState(70000)
+  const [maxPrice, setMaxPrice] = useState(500000)
   const [search, setSearch] = useState('')
   const [heroSlide, setHeroSlide] = useState(0)
   const [promoStart, setPromoStart] = useState(0)
